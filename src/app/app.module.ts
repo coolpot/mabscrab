@@ -9,6 +9,7 @@ import { CardContainerComponent } from './components/layout/card-container/card-
 import { ToolbarComponent } from './components/layout/toolbar/toolbar.component';
 import { PlayerDataTableComponent } from './components/player-data-table/player-data-table.component';
 import { MaterialModule } from './material.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MaterialModule } from './material.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

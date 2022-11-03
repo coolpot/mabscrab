@@ -1,1 +1,5 @@
-<p>card-container works!</p>
+<div class="container pt" fxLayout="row wrap" >
+   <div class="card" [fxFlex]="(100 / numberOfColumns) + '%'" fxFlex.sm="100%" fxFlex.xs="100%" *ngFor="let card of cards">
+      <app-card></app-card>
+   </div>
+</div>
