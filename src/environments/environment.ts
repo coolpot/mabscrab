@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  endpoint: 'https://mocki.io/v1/a309c560-7f2e-4ed0-9f86-06ee5113e214'
+  endpoint: 'https://mocki.io/v1/970037b9-6d8a-43e1-9c05-aac1fc58841f'
 };
