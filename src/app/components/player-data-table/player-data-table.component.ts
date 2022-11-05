@@ -18,9 +18,6 @@ export class PlayerDataTableComponent implements OnInit {
   playerArray: any = PLAYERDATA.Players;
   statsArray;
   playerData = [];
-  tableData: any;
-  topThreePlayers = [];
-  orderedPlayerList = [];
 
   constructor(private playerDataService: PlayerDataService) { }
 
