@@ -13,7 +13,7 @@ import { default as PLAYERDATA } from '../../_data/players.json';
 
 export class PlayerDataTableComponent implements OnInit {
   @ViewChild(MatSort, {static: true}) sort: MatSort;
-  displayedColumns: string[] = ['orderBy', 'Name', 'GamesPlayed', 'Score'];
+  displayedColumns: string[] = ['position', 'Name', 'GamesPlayed', 'Score'];
   dataSource: MatTableDataSource<any> = new MatTableDataSource();
   playerArray: any = PLAYERDATA.Players;
   statsArray;
@@ -45,7 +45,7 @@ export class PlayerDataTableComponent implements OnInit {
     });
   }
 
-  sortData(sort: Sort) { 
+  sortData(sort: Sort) {
     this.dataSource.sort = this.sort; 
   }
 
